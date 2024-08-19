@@ -1,0 +1,275 @@
+.banner {
+  background: url("../Assets/mypage/header.jpg");
+  background-size: cover;
+  width: 100%;
+}
+.banner h1 {
+  font-size: 46px;
+  color: var(--white);
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+main {
+  padding: 7rem;
+}
+
+main .sign-in-form {
+  width: 330px;
+  margin: auto;
+}
+
+main .sign-in-form .row:first-child {
+  padding: 30px;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(200, 200, 200, 1);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(200, 200, 200, 1);
+  box-shadow: 0px 3px 6px 0px rgba(200, 200, 200, 1);
+  flex-direction: column;
+}
+
+main form {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+main form .form-group label {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+main form .form-group .input {
+  width: 100%;
+  border: 1px solid var(--grey-300);
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+main form .row.btn {
+  align-items: center;
+}
+
+main form .row.btn button,
+main form .row.btn .btn {
+  color: var(--white);
+  background: var(--pink);
+  border-radius: 4px;
+  border: none;
+  padding: 11px 35px;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(189, 189, 189, 1);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(189, 189, 189, 1);
+  box-shadow: 0px 3px 6px 0px rgba(189, 189, 189, 1);
+}
+
+main form .row.btn a,
+main .row.terms a {
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+main .row.btn .col:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+main .row.terms .col {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main .row.terms .col a:last-child {
+  margin-left: 14px;
+}
+
+#banner div {
+  height: 310px;
+}
+
+section:not(#banner) {
+  padding: 80px 140px;
+  max-width: 1280px;
+  margin: auto;
+  width: 100%;
+}
+
+section h1 {
+  text-align: center;
+  font-size: 46px;
+  margin-bottom: 30px;
+}
+
+#service .col img {
+  height: 160px;
+}
+
+#service .col p:first-of-type {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#service .col p:last-of-type {
+  margin-top: 15px;
+}
+
+#service .img {
+  text-align: center;
+}
+
+#service .row {
+  row-gap: 24px;
+}
+
+#about-us {
+  background: url("../assets/aboutus/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+  background-position: center;
+}
+
+#about-us .col {
+  margin: auto;
+}
+
+#about-us p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 45px;
+}
+
+#news .row.outer {
+  width: 100%;
+  border-top: 1px solid var(--grey-700);
+  border-bottom: 1px solid var(--grey-700);
+  margin-bottom: 30px;
+}
+
+#news .row.outer .row.inner:nth-child(odd) span {
+  background: var(--pink);
+}
+
+#news .row.outer .row.inner:nth-child(even) span {
+  background: var(--blue);
+}
+
+#news .row .row.inner {
+  border-bottom: 1px solid var(--grey-300);
+}
+
+#news .row .row.inner span {
+  padding: 8px 22px;
+  color: var(--white);
+  border-radius: 5px;
+  background: var(--pink);
+  text-align: center;
+  display: block;
+  width: 120px;
+}
+
+#news .row.inner .col,
+#news .row.inner .col-8 {
+  padding: 22px 10px;
+  display: flex;
+  align-items: center;
+}
+
+#news div:last-child {
+  position: relative;
+}
+
+#news div:last-child button {
+  text-align: center;
+  margin: auto;
+  font-size: 16px;
+  width: 240px;
+  height: 60px;
+  border: 1px solid #707070;
+  background-color: var(--white);
+}
+
+#news div:last-child .shadow {
+  width: 240px;
+  height: 60px;
+  border: none;
+  border-bottom: 1px solid #707070;
+  border-right: 1px solid #707070;
+  background-color: var(--white);
+  z-index: -1;
+  top: 8%;
+  left: 38.5%;
+  position: absolute;
+}
+
+#contact {
+  background: url("../assets/contact/background.jpg");
+  color: var(--white);
+}
+
+#contact .row {
+  max-width: 1000px;
+  width: 100%;
+  height: 400px;
+  background: var(--grey-300);
+  align-items: center;
+  margin: auto;
+}
+
+#contact h2 {
+  font-size: 46px;
+  color: var(--grey-700);
+  text-align: center;
+}
+
+#banner .slides-container {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+#banner .slides-container .slide {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#banner .slides-container .slide img {
+  object-fit: cover;
+}
+
+#banner .slides-container .prev,
+#banner .slides-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+}
+
+#banner .slides-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+#banner .slides-container .prev:hover,
+#banner .slides-container .next:hover {
+  opacity: 0.8;
+}

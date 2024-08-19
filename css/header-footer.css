@@ -1,0 +1,122 @@
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header .col.nav li {
+  display: inline-block;
+}
+header li a {
+  text-align: center;
+  text-decoration: none;
+  padding: 0px 18px;
+  color: var(--grey-700);
+  font-weight: 500;
+  transition: 0.5s ease;
+}
+
+header,
+footer {
+  background: var(--yellow);
+  width: 100%;
+  height: 60px;
+}
+
+header .row,
+footer .row {
+  padding: 12px 140px;
+  margin: auto;
+  max-width: var(--width-pc);
+  width: var(--width-pc);
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .col.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .col.nav-mob {
+  display: none;
+}
+
+header .col p,
+footer .col p {
+  font-size: 20px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: var(--grey-700);
+}
+
+header .col a,
+footer .col a {
+  text-decoration: none;
+}
+
+header .col li .btn-sign {
+  background: var(--white);
+  font-weight: 700;
+  border-radius: 3px;
+  border: 1px solid var(--white);
+  font-size: 14px;
+  padding: 8px 18px;
+  margin-left: 18px;
+}
+
+footer .row .col:last-child {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+}
+
+/* Mobile Nav */
+header .row .col.nav-mob #navi,
+header .row .col.nav-mob .close {
+  background: none;
+  border: none;
+}
+
+header .row .col.nav-mob .burger-icon.close-icon::before {
+  content: "\2716";
+  color: var(--grey-700);
+}
+
+header .row .col.nav-mob .burger-icon::before {
+  content: "\2630";
+  color: var(--grey-700);
+}
+
+header .row .col.nav-mob .drop-down {
+  display: none;
+  position: absolute;
+  background-color: #00000099;
+  width: 100%;
+  height: 100%;
+  top: 60px;
+  left: 0;
+  z-index: 1;
+}
+
+header .row .col.nav-mob .drop-down li a {
+  display: block;
+  text-align: left;
+  color: var(--yellow);
+  padding: 15px;
+  border-bottom: 1px solid #0000004d;
+}
+
+header .row .col.nav-mob .drop-down li .btn-sign {
+  margin-top: 15px !important;
+  width: 92%;
+  font-size: 16px;
+  padding: 15px;
+  color: var(--grey-700);
+  text-align: center;
+  border-radius: 5px;
+  margin: auto;
+}
+
+header .row .col.nav-mob p:hover .drop-down {
+  display: block;
+}
